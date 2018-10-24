@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  activemqpublish:
+    image: ${DOCKER_REGISTRY}activemqpublish
+    build:
+      context: .
+      dockerfile: ActiveMQPublish\Dockerfile
